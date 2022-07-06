@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function Todo({ todo, toggleTodo }) {
-  let handleTodoClick = () => {
+  const handleTodoClick = () => {
     toggleTodo(todo.id);
   };
   return (

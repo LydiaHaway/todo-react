@@ -17,14 +17,14 @@ export default function Form() {
     localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(todos));
   }, [todos]);
 
-  let toggleTodo = (id) => {
+  const toggleTodo = (id) => {
     const newTodos = [...todos];
     const todo = newTodos.find((todo) => todo.id === id);
     todo.complete = !todo.complete;
     setTodos(newTodos);
   };
 
-  let handleAddTodo = (e) => {
+  const handleAddTodo = (e) => {
     const name = todoNameRef.current.value;
     if (name === "") return;
     setTodos((prevTodos) => {
@@ -33,7 +33,7 @@ export default function Form() {
     todoNameRef.current.value = null;
   };
 
-  let handleClearTodos = () => {
+  const handleClearTodos = () => {
     const newTodos = todos.filter((todo) => !todo.complete);
     setTodos(newTodos);
   };
