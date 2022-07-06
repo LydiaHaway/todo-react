@@ -58,7 +58,6 @@ function App() {
           <TodoList todos={todos} toggleTodo={toggleTodo} />
         </ul>
         <br />
-
         <button className="clear" onClick={handleClearTodos}>
           Clear Completed
         </button>
