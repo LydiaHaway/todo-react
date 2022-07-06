@@ -5,7 +5,7 @@ export default function Todo({ todo, toggleTodo }) {
     toggleTodo(todo.id);
   };
   return (
-    <div className="todoList">
+    <li className="todoList">
       <label>
         <input
           type="checkbox"
@@ -14,6 +14,6 @@ export default function Todo({ todo, toggleTodo }) {
         />
         {todo.name}
       </label>
-    </div>
+    </li>
   );
 }
