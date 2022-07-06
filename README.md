@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Build an TodoList app to learn how to use React JS.
+Build a TodoList app to learn how to use React JS.
 
 ## Functionalities
 
