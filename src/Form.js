@@ -40,18 +40,18 @@ export default function Form() {
 
   return (
     <>
-      <div className="InputAdd">
+      <section className="InputAdd">
         <input ref={todoNameRef} type="text" />
         <button className="add" onClick={handleAddTodo}>
           Add
         </button>
         <br />
         <br />
-        <div className="todoNotComplete">
+        <p className="todoNotComplete">
           {todos.filter((todo) => !todo.complete).length} left to do
-        </div>
-      </div>
-      <div className="list">
+        </p>
+      </section>
+      <section className="list">
         <ul>
           <TodoList todos={todos} toggleTodo={toggleTodo} />
         </ul>
@@ -59,7 +59,7 @@ export default function Form() {
         <button className="clear" onClick={handleClearTodos}>
           Clear Completed
         </button>
-      </div>
+      </section>
     </>
   );
 }
