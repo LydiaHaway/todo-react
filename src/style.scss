@@ -97,6 +97,11 @@
               word-wrap: break-word;
               max-width: 80%;
             }
+
+            .complete {
+              text-decoration: line-through;
+              opacity: 0.5;
+            }
           }
         }
       }
