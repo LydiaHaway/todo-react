@@ -4,6 +4,7 @@ export default function Todo({ todo, toggleTodo }) {
   const handleTodoClick = () => {
     toggleTodo(todo.id);
   };
+
   return (
     <li className="todoList">
       <label>

@@ -66,12 +66,13 @@
 
     .list {
       ul {
-        padding-bottom: 40px;
+        padding-bottom: 60px;
+
         li {
           list-style: none;
           width: 100%;
-          padding-top: 5px;
-          padding-bottom: 5px;
+          padding-top: 6px;
+          padding-bottom: 6px;
           background-color: #5ec2bf;
           border-top: 3px solid #00938b;
           color: rgb(27, 24, 24);
@@ -80,10 +81,16 @@
             background-color: #5ec278;
           }
 
-          input {
+          label {
             cursor: pointer;
-            position: absolute;
-            left: 50px;
+
+            input[type="checkbox"] {
+              transform: scale(1.5);
+              cursor: pointer;
+              position: absolute;
+              left: 50px;
+              accent-color: rgb(163, 58, 58);
+            }
           }
         }
       }
