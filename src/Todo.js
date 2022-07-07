@@ -13,7 +13,7 @@ export default function Todo({ todo, toggleTodo }) {
           checked={todo.complete}
           onChange={handleTodoClick}
         />
-        {todo.name}
+        <p>{todo.name}</p>
       </label>
     </li>
   );
