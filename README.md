@@ -8,6 +8,7 @@ Build a TodoList app to learn how to use React JS.
 
 - Add new todos
 - Mark todos as done or undone
+- Edit todos
 - Clear completed todos
 - keep todos saved in your browser
 - Knows how many todos are left to do

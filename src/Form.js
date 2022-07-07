@@ -25,6 +25,7 @@ export default function Form() {
   };
 
   const handleAddTodo = (e) => {
+    e.preventDefault();
     const name = todoNameRef.current.value;
     if (name === "") return;
     setTodos((prevTodos) => {
@@ -41,11 +42,13 @@ export default function Form() {
   return (
     <>
       <section className="InputAdd">
-        <input ref={todoNameRef} type="text" />
-        <button className="add" onClick={handleAddTodo}>
-          Add
-        </button>
-        <br />
+        <form>
+          <input ref={todoNameRef} type="text" />
+          <button type="submit" className="add" onClick={handleAddTodo}>
+            Add
+          </button>
+          <br />
+        </form>
         <br />
         <p className="todoNotComplete">
           {todos.filter((todo) => !todo.complete).length} left to do
@@ -53,7 +56,7 @@ export default function Form() {
       </section>
       <section className="list">
         <ul>
-          <TodoList todos={todos} toggleTodo={toggleTodo} />
+          <TodoList todos={todos} toggleTodo={toggleTodo} setTodos={setTodos} />
         </ul>
         <br />
         <button className="clear" onClick={handleClearTodos}>
